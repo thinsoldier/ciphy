@@ -6,8 +6,10 @@ module.exports = {
         client.on('guildMemberAdd', member => {
             const channel = member.guild.channels.find('name', 'general');
             if (!channel) return;
-            channel.send(`Welcome to the server, ${member}`);
-            const image = `https://image.ibb.co/nmxhqb/Welcome.png`;
+            channel.send(`Welcome to the server, ${member}.
+                          Have a look at our #welcome channel
+                          for rules and futher informations`);
+            const image = `https://i.imgur.com/lGvt46k.png`;
             channel.send(image);
         });
     }
