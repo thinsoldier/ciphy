@@ -6,4 +6,4 @@ client.on('ready', () => {
   console.log('Bot Started');
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login('MzY0MzAzMDUzOTE2MjA5MTUy.DLUCRg.8MTvBJP32Xx7dWJ8mbM-uSc0Akg');
