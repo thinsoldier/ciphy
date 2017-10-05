@@ -7,7 +7,7 @@ const client = new commando.Client({
 //Greet and set the role to developer for every new member.
 require('./modules/functions')(client);
 
-client.registry()
+client.registry
     .registerGroup('ciphy', 'ciphy commands')
     .registerDefaults()
     .registerCommandsIn(path.join(__dirname+'/commands'));
