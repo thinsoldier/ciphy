@@ -1,7 +1,7 @@
 module.exports = client => {
     client.on('guildMemberAdd', member => {
 
-        const generalChannel = member.guild.channels.find('id', '290833497373802496');
+        const generalChannel = member.guild.channels.find('name', 'general');
         if (!generalChannel) return;
         //The random numbers are channel ID
         const welcomeChannel = member.guild.channels.find('id', '363967155634438144');
