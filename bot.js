@@ -12,4 +12,4 @@ client.registry
     .registerDefaults()
     .registerCommandsIn(path.join(__dirname+'/commands'));
 
-client.login(process.env.BOT_TOKEN);
+client.login('MzU1MzgxMDUwNjk4MTA0ODM1.DLe4aw.9DXMnYF6GYj7c_pULKkFeq9mPY8');

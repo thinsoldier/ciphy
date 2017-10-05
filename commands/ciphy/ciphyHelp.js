@@ -25,8 +25,8 @@ class CiphyHelp extends commando.Command{
     async run(message, args){
 
         const sendMessage = text => {
-            const resourceChannel = message.guild.channels.find('name', 'resources');
-            text += `\n\nYou can also search through our ${resourceChannel} to get more data over the topic. \n`;
+            const resourceChannel = message.guild.channels.find('id', '290854624821379072');
+            text += `You can also search through our ${resourceChannel} channel to get more resources over the topic. \n`;
             message.channel.send(text);
         };
 
@@ -43,6 +43,12 @@ class CiphyHelp extends commando.Command{
                     break;
                 case 'help java':
                     sendMessage(this.generateInfo('java'));
+                    break;
+                case 'help php':
+                    sendMessage(this.generateInfo('php'));
+                    break;
+                case 'help fccguide':
+                    sendMessage(this.generateInfo('fccguide'));
                     break;
                 default:
                     sendMessage('May be info on those is still to be uploaded!');
