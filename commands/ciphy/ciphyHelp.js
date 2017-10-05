@@ -30,30 +30,85 @@ class CiphyHelp extends commando.Command{
             message.channel.send(text);
         };
 
-        if(args.toLowerCase().split(' ').indexOf('help') == -1){
-            message.reply('Please include "help" to get the necessary information.');
-        }else if(args.toLowerCase().split(' ').indexOf('help') != -1
-                && args.split(' ').length<=1){
-            message.reply('Pleade mention the topic after "help" to get the results, or type `!ciphy help options` to get the list of help options!');
-        }else{
+        const commands = args.toLowerCase().split(' ');
+
+        switch (true){
+
+            //If no arguments is passed then a message listing all the commands are send
+            case args.length <= 0 :
+                message.channel.send(
+'Here are list of few commands that I can help you with\n\n' + '```' +
+`
+- !ciphy help <topic> - display resource on the topic
+- !ciphy pro <topic> - _fetch names of teamleaders for the topic_
+- !ciphy info - details about me
+`
++ '```' + '\n Just type in the name of the command after !ciphy like `!ciphy help`'
+                );
+                break;
+
+            //For the commands with help arg
+            case commands.indexOf('help') != -1 :
+                if(commands.indexOf('help') != -1 && commands.length==1){
+                    message.channel.send(
+'The topics I can help you with are:\n\n' + '```' +
+`
+- CSS
+- C++
+- Java
+- JavaScript
+- PHP
+- Photoshop
+- Python
+- React
+- Ruby
+- Web Design
+`
++'```' + '\nType in the name of topic after help like `!ciphy help <topic>`');                  
+                }else{
+                    
+                    switch(args.toLowerCase()){
+                        case 'help javascript':
+                            sendMessage(this.generateInfo('javascript'));
+                            break;
+                        case 'help java':
+                            sendMessage(this.generateInfo('java'));
+                            break;
+                        case 'help php':
+                            sendMessage(this.generateInfo('php'));
+                            break;
+                        case 'help fccguide':
+                            sendMessage(this.generateInfo('fccguide'));
+                            break;
+                        default:
+                            sendMessage('May be info on those is still to be uploaded!');
+                            break;
+                    }
+                }
+                break;
             
-            switch(args.toLowerCase()){
-                case 'help javascript':
-                    sendMessage(this.generateInfo('javascript'));
-                    break;
-                case 'help java':
-                    sendMessage(this.generateInfo('java'));
-                    break;
-                case 'help php':
-                    sendMessage(this.generateInfo('php'));
-                    break;
-                case 'help fccguide':
-                    sendMessage(this.generateInfo('fccguide'));
-                    break;
-                default:
-                    sendMessage('May be info on those is still to be uploaded!');
-                    break;
-            }
+
+            //commands for pro
+            case commands.indexOf('pro') != -1 :
+                if(commands.indexOf('pro') != -1 && commands.length==1){
+                    message.channel.send(
+'You can find Team Leader for the following: \n\n' + '```' +
+`
+- Front-End Web Development | fewd
+- Back-End Web Development | bewd
+- Web Design | wd
+`
++ '```' + '\nUSAGE: `!ciphy pro fewd`'
+                    );
+                }else{
+                    
+                }
+                break;
+            default:
+                message.channel.send(
+                    `Sorry I don't know anything about that!`
+                );
+                break;
         }
     }
 }
