@@ -10,35 +10,38 @@ const linkData = [
         description : 'MDN provides detailed documentation over JavaScript including Guides, Tutorials and Explanation.'
     },
     {
-        topic : 'javascript',
-        link : 'https://www.w3schools.com/js/',
-        description : 'W3Schools is the best site, it provides info, hacks, tricks, small apps related on Javascript'
-    },
-    {
         topic : 'java',
         link : 'https://docs.oracle.com/javase/9/',
         description : 'This Documentaion provides information on latest Java JDK 9'
     },
     {
-        topic : 'java',
-        link : 'https://www.tutorialspoint.com/java/',
-        description : 'Tutorials Point provides a beginner friendly guide to Java'
+        topic : 'python',
+        link : 'https://docs.python.org/3/',
+        description : 'This is the documentation for Python 3'
+
     },
     {
-        topic : 'php',
-        link : 'http://php.net/docs.php',
-        description : 'Official PHP Documentations'
+        topic: 'python',
+        link: 'https://www.learnpython.org',
+        description: 'Interactive website for learning Python'
     },
     {
-        topic : 'php',
-        link : 'https://www.w3schools.com/php/',
-        description : 'PHP5 tutorials from W3Schools'
+        topic: 'react',
+        link: 'https://reactjs.org/docs',
+        description: 'Official webpage for the react documentation'
+
     },
     {
-        topic : 'fccguide',
-        link : 'https://guide.freecodecamp.org/',
-        description : 'FCC Guide is Beta Documentation Project that provide info to get started with different Programming Languages.'
-    }
+        topic: 'react-native',
+        link: 'http://facebook.github.io/react-native/docs',
+        description: 'Official documentation for React Native'
+    },
+    {
+        topic: 'react',
+        link: 'https://jscomplete.com/learning-react-js',
+        description: 'Interactive website for learning react',
+    },
+
 ];
 
 module.exports = linkData;
