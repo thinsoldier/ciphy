@@ -80,6 +80,9 @@ class CiphyHelp extends commando.Command{
                         case 'help fccguide':
                             sendMessage(this.generateInfo('fccguide'));
                             break;
+                        case 'help python':
+                            sendMessage(this.generateInfo('python'));
+                            break;
                         default:
                             sendMessage('May be info on those is still to be uploaded!');
                             break;
