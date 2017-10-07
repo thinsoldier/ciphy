@@ -61,6 +61,7 @@ class CiphyHelp extends commando.Command{
 - Photoshop
 - Python
 - React
+- React Native
 - Ruby
 - Web Design
 `
@@ -82,6 +83,9 @@ class CiphyHelp extends commando.Command{
                             break;
                         case 'help python':
                             sendMessage(this.generateInfo('python'));
+                            break;
+                        case 'help react':
+                            sendMessage(this.generateInfo('react'));
                             break;
                         default:
                             sendMessage('May be info on those is still to be uploaded!');

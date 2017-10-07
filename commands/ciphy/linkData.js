@@ -1,4 +1,4 @@
-const linkData = [
+module.exports = [
     {
         topic : 'javascript',
         link : 'https://javascript.info',
@@ -28,13 +28,13 @@ const linkData = [
     {
         topic: 'react',
         link: 'https://reactjs.org/docs',
-        description: 'Official webpage for the react documentation'
+        description: 'Official ReactJS documentation'
 
     },
     {
-        topic: 'react-native',
+        topic: 'react',
         link: 'http://facebook.github.io/react-native/docs',
-        description: 'Official documentation for React Native'
+        description: 'Documentation for React Native'
     },
     {
         topic: 'react',
@@ -42,6 +42,4 @@ const linkData = [
         description: 'Interactive website for learning react',
     },
 
-];
-
-module.exports = linkData;
+]
