@@ -10,7 +10,10 @@ const client = new commando.Client({
 require('./modules/functions')(client);
 
 client.registry
-    .registerGroup('ciphy', 'ciphy commands')
+    .registerGroups([
+        ['ciphy', 'ciphy commands'],
+        ['zone', 'timezone commands']
+    ])
     .registerDefaults()
     .registerCommandsIn(path.join(__dirname+'/commands'));
 
