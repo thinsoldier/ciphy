@@ -25,7 +25,7 @@ Usage : **!zone <username>**
 
 		timezones.forEach(user => {
 			if(username_passed.toLowerCase() == user.name){
-				message.channel.send(`Timezone that **${user.name}** lives in, is ${user.zone}`)
+				message.channel.send('Timezone that **${user.name}** lives in, is ' + '`${user.zone}`')
 			}
 			all_users.push(user.name)
 		})

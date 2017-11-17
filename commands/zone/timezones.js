@@ -9,18 +9,18 @@ module.exports = [
 	},
 	{
 		name : 'thinsoldier',
-		zone : 'undefined'
+		zone : 'not available'
 	},
 	{
 		name : 'gp22',
-		zone : 'undefined'
+		zone : 'not available'
 	},
 	{
 		name : 'vincent',
-		zone : 'undefined'
+		zone : 'not available'
 	},
 	{
 		name : 'viniciusarre',
-		zone : 'undefined'
+		zone : 'not available'
 	},		
 ]
