@@ -22,5 +22,9 @@ module.exports = [
 	{
 		name : 'viniciusarre',
 		zone : 'not available'
-	},		
+	},	
+	{
+		name : 'Orely',
+		zone : 'UTC + 01:00'
+	},	
 ]
