@@ -9,7 +9,7 @@ module.exports = [
 	},
 	{
 		name : 'thinsoldier',
-		zone : 'not available'
+		zone : 'UTC - 07:00'
 	},
 	{
 		name : 'gp22',
